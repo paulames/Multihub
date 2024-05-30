@@ -1,0 +1,63 @@
+.btn2{
+    background-color: #548EA1;
+    color: white;
+    font-weight: bold;
+    height: 50px;
+    width: 200px;
+    margin: 5px;
+    justify-self: center;
+    border: 2px solid #548EA1; /* Añade un borde del mismo color que el fondo */
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Añade una transición suave al cambiar el color */
+}
+.btn2:hover {
+    background-color: #3C6979; /* Cambia el color del fondo al pasar el ratón por encima */
+    border-color: #3C6979; /* Cambia el color del borde al pasar el ratón por encima */
+}
+.btn3{
+    background-color:  #3f4547;
+    color: white;
+    font-weight: bold;
+    height: 50px;
+    width: 200px;
+    margin: 5px;
+    justify-self: center;
+    border: 2px solid  #3f4547; /* Añade un borde del mismo color que el fondo */
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Añade una transición suave al cambiar el color */
+}
+.btn3:hover{
+    background-color: #525c5f;
+    border-color:#525c5f;
+}
+
+.me-gusta{
+    background-color: #323e42;
+    color: white;
+    font-weight: bold;
+    height: 50px;
+    width: 200px;
+    margin: 5px;
+    justify-self: center;
+    border: 2px solid  #323e42; /* Añade un borde del mismo color que el fondo */
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Añade una transición suave al cambiar el color */
+}
+.me-gusta:hover {
+    background-color: #1f2527; /* Cambia el color del fondo al pasar el ratón por encima */
+    border-color: #1f2527; /* Cambia el color del borde al pasar el ratón por encima */
+}
+
+
+.descargar{
+    background-color: #548EA1;
+    color: white;
+    font-weight: bold;
+    height: 50px;
+    width: 200px;
+    margin: 5px;
+    justify-self: center;
+    border: 2px solid #548EA1; /* Añade un borde del mismo color que el fondo */
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Añade una transición suave al cambiar el color */
+}
+.descargar:hover {
+    background-color: #3C6979; /* Cambia el color del fondo al pasar el ratón por encima */
+    border-color: #3C6979; /* Cambia el color del borde al pasar el ratón por encima */
+}

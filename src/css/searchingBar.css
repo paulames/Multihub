@@ -1,0 +1,46 @@
+#estruct {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Estilos para el formulario */
+.search-bar {
+
+  width: 200px; /* Limita el ancho del formulario */
+ 
+}
+
+/* Estilos para el input */
+.search-input {
+  min-width: 54px;
+  width: 100%;
+  padding: 10px 20px; /* Ajusta el relleno para mayor altura */
+  border: 1px solid #ccc; /* Ajusta el color del borde */
+  border-radius: 20px; /* Redondea las esquinas */
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Agrega una sombra ligera */
+  transition: all 0.3s ease-in-out; /* Agrega una transición suave */
+}
+
+.search-input:focus {
+  border-color: #2e6274; /* Cambia el color del borde al enfocar */
+  border-width: 2px;
+  box-shadow: 0 0 10px rgba(46, 98, 116, 0.2); /* Aumenta la sombra */
+}
+
+@media screen and (max-width: 815px) {
+.search-bar {
+  width: 100%; /* Hace que el formulario ocupe todo el ancho disponible en pantallas pequeñas */
+}
+.search-input {
+  width: 50%; /* Ajusta el ancho del input en pantallas pequeñas */
+}
+}
+/* Estilos para pantallas grandes (por ejemplo, desktops) */
+@media screen and (min-width: 1300px) {
+.search-bar {
+  width: 500px; /* Ajusta el ancho fijo en pantallas grandes */
+}
+}

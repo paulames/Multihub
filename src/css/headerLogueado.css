@@ -1,0 +1,315 @@
+/* 
+body{
+    margin: 0;
+    padding: 0px;
+  
+  }
+  
+  header {
+    min-width: 300px;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+    white-space: nowrap;
+    position: relative;
+    background-color: hsl(0, 0%, 100%);
+  }
+  #logo{
+    position: relative;
+    top: 5px;
+    margin: 30px;
+    cursor: pointer;
+  }
+  #logo img {
+    width: 700px; 
+    height: auto; 
+  }
+  
+  #elementos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+  }
+  
+  
+  nav{
+    
+    position: relative;
+  }
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    height: 100%; 
+  }
+  
+  li {
+    height: 100%;
+  }
+  
+  li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    transition: all 0.3s ease; 
+  }
+  
+  nav ul li:hover a {
+    padding: 20px 20px; 
+    background-color: hsl(195, 78%, 27%); 
+    color: #ffffff; 
+  }
+  
+  nav ul li:hover a {
+    color: #ffffff;
+  }
+  
+  #categorias {
+    background: #2e6274; 
+    color: #fff;
+  
+    border-radius: 10px;
+    border: 2px solid #2e6274; 
+    padding: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease; 
+  }
+  
+  #categorias:hover {
+    transform: scale(1.1); 
+    background-color: hsl(195, 79%, 15%); 
+  }
+  #categorias:focus{
+    
+    border-color: #2e6274;
+  }
+  #categorias option {
+    background: #ffffff; 
+    color: #000; 
+    font-weight: bold; 
+    font-size: 1.2em;
+    padding: 10px;
+    border: none;
+    border: 2px solid #2e6274; 
+  }
+  
+  #categorias option:hover {
+    border: none;
+    background: hsl(195, 79%, 15%);
+  }
+  
+  #menu_hamburguesa {
+    display: none;
+  }
+  
+  #icono_menu {
+    cursor: pointer;
+  }
+  
+  #menu_hamburguesa:checked ~ #todo aside nav ul {
+    display: grid; 
+  }
+  
+  form.search-bar{
+    margin-left: 40px;
+  }
+  #todo{
+    margin: 0;
+  }
+  
+  
+  @media screen and (min-width: 600px){
+      #todo{
+          display: flex;
+          justify-content: space-between;
+          align-items: baseline;  
+      }
+      ul{
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          width: 100%;
+          margin-right: 250px;
+          padding: 0;
+      }
+      #icono_menu{
+          display: none;
+      }   
+     
+  }
+  
+  @media screen and (max-width: 600px){
+    #logo{
+      display: none;
+    }
+  } */
+
+  
+
+/* headerLogeado */
+body{
+  margin: 0;
+  padding: 0px;
+
+}
+
+header {
+  min-width: 300px;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #ffffff;
+  white-space: nowrap;
+  position: relative;
+  background-color: hsl(0, 0%, 100%);
+}
+#logo{
+  position: relative;
+  top: 5px;
+  margin: 30px;
+  cursor: pointer;
+}
+#logo img {
+  width: 700px; /* Ajusta el tamaño según tus necesidades */
+  height: auto; /* Mantiene la proporción de la imagen */
+}
+
+#elementos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+
+nav{
+  
+  position: relative;
+}
+ul {
+  list-style: none;
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  height: 100%; /* Asegura que el menú ocupe todo el alto del header */
+}
+
+li {
+  height: 100%;
+}
+
+li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  padding: 10px 20px;
+  transition: all 0.3s ease; /* Agrega una transición suave a todas las propiedades */
+}
+
+nav ul li:hover a {
+  padding: 20px 20px; /* Cambia el padding al hacer hover */
+  background-color: hsl(195, 78%, 27%); /* Cambia el color de fondo al hacer hover */
+  color: #ffffff; /* Cambia el color del texto al hacer hover */
+}
+
+nav ul li:hover a {
+  color: #ffffff;
+}
+/*APARTADO DE LAS CATEGORIAS*/
+#categorias {
+  background: #2e6274; /* Color de fondo inicial */
+  color: #fff; /* Color del texto inicial */
+
+  border-radius: 10px;
+  border: 2px solid #2e6274; /* Borde inicial */
+  padding: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Transiciones suaves */
+}
+
+#categorias:hover {
+  transform: scale(1.1); /* Aumenta el tamaño en un 5% */
+  background-color: hsl(195, 79%, 15%); /* Cambia el color de fondo al hacer hover */
+}
+#categorias:focus{
+  /* Mantén el borde igual al estado normal para que no cambie al enfocar */
+  border-color: #2e6274;
+}
+#categorias option {
+  background: #ffffff; /* Color de fondo de las opciones */
+  color: #000; /* Color del texto de las opciones */
+  font-weight: bold; /* Texto en negrita */
+  font-size: 1.2em; /* Tamaño de texto más grande */
+  padding: 10px;
+  border: none;
+  border: 2px solid #2e6274; /* Borde azul */
+}
+
+#categorias option:hover {
+  border: none;
+  background: hsl(195, 79%, 15%); /* Cambia el color de fondo de las opciones al hacer hover */
+  color: #ffffff; /* Color del texto al hacer hover */
+}
+
+#menu_hamburguesa {
+  display: none;
+}
+
+#icono_menu {
+  cursor: pointer;
+}
+
+#menu_hamburguesa:checked ~ #todo aside nav ul {
+  display: grid; /* Mostrar el menú cuando el checkbox está marcado */
+}
+
+form.search-bar{
+  margin-left: 40px;
+}
+#todo{
+  margin: 0;
+}
+
+
+@media screen and (min-width: 815px){
+    #todo{
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;  
+    }
+    ul{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        margin-right: 250px;
+        padding: 0;
+    }
+    #icono_menu{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1050px){
+  ul{
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 1315px){
+  #logo{
+    display: none;
+  }
+}

@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Evita el desplazamiento horizontal */
+}
+
+#publicaciones {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(22em, 1fr)); 
+  padding: 10px;
+  margin: .5em;
+  gap: 0.5em;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#publicaciones > div {
+  padding: 10px;
+  box-sizing: border-box; /* Asegura que padding y border se incluyan en el tamaño total del elemento */
+}
+
+#publicaciones img {
+  width: 100%;
+  object-fit: cover; /* Ajustar la imagen sin distorsionar */
+  display: block; /* Elimina el espacio inferior causado por las imágenes inline-block */
+}
+#publicaciones object {
+  height: 300px;
+  width: 100%;
+  margin: 15px;
+  object-fit: cover; /* Ajustar la imagen sin distorsionar */
+  display: block; /* Elimina el espacio inferior causado por las imágenes inline-block */
+}
+
+#infos {
+  display: grid;
+  background-color: rgb(230, 244, 252);
+  max-width: 80%;
+  margin: auto;
+  margin-top: -130px;   
+  text-align: justify;
+  z-index: 2;
+  padding-top: 10px;
+  position: relative;
+}
+
+#infos > h2 {
+  margin: 0;
+  padding: 10px;
+}
+
+#informacion p {
+  margin: 0.5em 0; /* Ajusta este valor a la cantidad de espacio que prefieras */
+}
+
+#informacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra los elementos en el eje transversal */
+  width: 100%; /* Asegura que los elementos ocupen todo el ancho disponible */
+}
+
+#informacion p::before {
+  content: " ✓ "; /* Reemplaza "✓" con tu icono */
+  /* Añade más estilos aquí si es necesario */
+}
+
+.swiper {
+  width: 100%;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+
+.swiper-slide img {
+  width: 30%;
+  margin: auto;
+}
+
+@media screen and (min-width: 600px) {
+  /* #publicaciones {
+    grid-template-columns: repeat(auto-fill, minmax(18em, 1fr)); 
+  } */
+
+  /* #infos {
+    max-width: 80%;
+    margin: auto;
+    margin-top: -130px;   
+    padding: 10px;
+  } */
+
+  .swiper {
+    width: 100%;
+  }
+  
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .swiper-slide img {
+    width: 30%;
+    margin: auto;
+  }
+}
+
+/* @media screen and (min-width: 1200px) {
+  #publicaciones {
+    grid-template-columns: repeat(auto-fill, minmax(25em, 1fr)); 
+  }
+} */

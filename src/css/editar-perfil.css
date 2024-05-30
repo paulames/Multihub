@@ -1,0 +1,110 @@
+
+#cabecera-editar-perfil {
+  display: flex; /* Organiza los elementos en una fila */
+  align-items: center; /* Centra los elementos verticalmente */
+  margin-top: 50px; /* Añade un margen en la parte superior */
+  margin-left: 70px;
+  margin-bottom: 30px;
+  background-color: #525c5f; /* Fondo azul para la cabecera */
+  width: 50%; /* Los inputs no ocupan todo el ancho de la pantalla */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+h3{
+  margin-top: 10px;
+  margin-bottom:10px;
+  margin-left: 20px;
+color: rgb(255, 255, 255); /* Texto blanco para el h1 dentro de la cabecera */
+}
+
+#form-editar-datos-perfil{
+  margin-left: 60px;
+}
+
+label{
+margin-left: 20px; /* Añade margen izquierdo al formulario */
+}
+#input-editar-datos-perfil{
+width: 50%;
+}
+#input-editar-datos-perfil {
+width: 50%; /* Los inputs no ocupan todo el ancho de la pantalla */
+margin-left: 0;
+}
+#botoncico-editar-perfil{
+margin-top: 20px;
+margin-left: 10px;
+}
+#form-editar-datos-perfil{
+ display: flex; /* Organiza los elementos en una fila */
+  flex-direction: column; /* Organiza los elementos en una columna */
+  gap: 15px; /* Espacio entre los elementos */
+}
+#input-editar-datos-perfil{
+  padding: 10px; /* Añade un espaciado interno */
+  background-color: #f2f2f2; /* Fondo gris para los inputs */
+  border: 1px solid #ccc; /* Borde gris para los inputs */
+  transition: all 0.3s ease; /* Efecto de transición en los inputs */
+}
+
+@media screen and (max-width: 300px) {
+ /* Estilos generales para la página móvil primero */
+
+
+#cabecera-editar-perfil {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #548EA1;
+  width: 100%; /* Ancho completo en dispositivos móviles */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 10px; /* Espaciado interno */
+}
+
+h3 {
+  margin: 0;
+  color: rgb(255, 255, 255);
+}
+
+#form-editar-datos-perfil {
+  display: flex;
+  flex-direction: column; /* Organiza los elementos en una columna */
+  gap: 15px; /* Espacio entre los elementos */
+}
+
+label {
+  display: flex;
+  flex-direction: column; /* Coloca el input debajo del label */
+  font-weight: bold;
+}
+
+#cabecera-editar-perfil{
+  margin-right: 20px;
+}
+#input-editar-datos-perfil {
+  width:80%; /* Los inputs ocupan todo el ancho del contenedor */
+  padding: 10px;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  transition: all 0.3s ease;
+  
+}
+
+#input-editar-datos-perfil:focus {
+  background-color: white;
+}
+
+#botoncico-editar-perfil {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center; /* Centra el botón */
+}
+
+#botoncico-editar-perfil button {
+  width: 100%; /* Botón ocupa todo el ancho */
+}
+}
+
+

@@ -1,0 +1,93 @@
+/* login.css */
+
+.login-page {
+    background-color: #548EA1; /* Establecemos el color de fondo azul */
+    min-height: 100vh; /* Aseguramos que el contenedor ocupe al menos toda la altura de la ventana del navegador */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+    #login-container {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 30px;
+   /* border: 1px solid #ccc;*/
+    border-radius: 20px;
+    /*background-color: #f9f9f9; /* Color de fondo */
+    background-color: rgba(255, 255, 255, 0.4); 
+   
+  }
+ input#email{
+  margin:0px;
+ }
+  .logo {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    margin: 0 auto;   
+  }
+
+  #login-registro {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    
+  }
+  
+  label {
+    margin-bottom: 5px;
+
+  }
+  
+  input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: calc(100% - 16px); /* Establecer el ancho del input al 100% menos el padding */
+    padding: 7px;
+    border: 1px solid #ccc; /* Agregar un borde sólido */
+    border-radius: 5px; /* Hacer los bordes redondeados */
+  }
+  
+ /* button {
+    padding: 10px;
+    background-color: #548EA1;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #446872;
+  }*/
+/* CSS puro */
+.btn-3 {
+    background: #548EA1; /* Color rojo */
+    border: 1px solid #548EA1; /* Color rojo oscuro */
+    box-shadow: 0px 2px 0 #4e8da2, 2px 4px 6px #529bb4; /* Sombras con colores rojos oscuros */
+    font-weight: 900;
+    letter-spacing: 1px;
+    transition: all 150ms linear;
+    border-radius: 5px;
+    padding: 5px;
+    color: #ffffff;
+}
+
+.btn-3:hover {
+    background: #2e6274; /* Color rojo más oscuro */
+    border: 1px solid rgba(0, 0, 0, 0.05); /* Borde con color negro transparente */
+    box-shadow: 1px 1px 2px rgba(75, 139, 164, 0.476); /* Sombra con color blanco transparente */
+    color: #ffffff; /* Color rojo más claro */
+    text-decoration: none;
+    text-shadow: -1px -1px 0 #084255; /* Sombra de texto con color rojo oscuro */
+    transition: all 250ms linear;
+}
+
+
+p{text-align: center;}
+p>a{
+    color: black;
+}

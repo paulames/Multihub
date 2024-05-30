@@ -1,0 +1,82 @@
+.cabecera {
+    display: flex; /* Organiza los elementos en una fila */
+    align-items: center; /* Centra los elementos verticalmente */
+    margin-top: 50px; /* Añade un margen en la parte superior */
+    margin-left: 30px;
+  }
+  
+  .foto-alumno {
+    width: 100px; /* Ajusta el tamaño de la foto */
+    height: 100px;
+    border-radius: 50%; /* Hace que la foto sea circular */
+    object-fit: cover; /* Asegura que la foto cubra todo el espacio disponible */
+  }
+  h2#perfil{
+    margin-left: 0px;
+    margin-bottom: 0px;
+  }
+ 
+  .info-alumno {
+    margin-bottom: 20px;
+    margin-left: 20px; /* Añade un margen a la izquierda para separar la información del alumno de la foto */
+  }
+  
+  .icono-ajustes {
+    margin-left: 20px; /* Empuja el icono de ajustes hacia la derecha */
+    margin-bottom: 30px;
+    font-size: 27px;
+    color:
+    rgb(0, 0, 0)
+  }
+  .icono-ajustes:hover{
+    color:rgb(169, 168, 168)
+  }
+  
+  .cerrar-sesion {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px;
+    margin-bottom: 30px;
+  }
+  .cerrar-sesion:hover{
+    cursor: pointer;
+  }
+
+  a#a-cerrar {
+    cursor: pointer;
+    text-decoration: solid;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+a#a-cerrar>span{
+    font-size: 20px;
+}
+a#a-cerrar:hover{
+   
+  color:rgb(169, 168, 168)
+}
+#salir{
+    margin-left: 5px;
+    font-size: 27px;
+}
+#salir:hover{
+    color:rgb(169, 168, 168)
+  
+}
+#salir {
+  position: relative;
+}
+
+
+
+#salir:hover::after {
+  content: "Cerrar sesión";
+  opacity: 1;
+  visibility: visible;
+}
+
+#salir:hover {
+  color: rgb(169, 168, 168);
+}

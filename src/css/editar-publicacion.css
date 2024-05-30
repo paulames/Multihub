@@ -1,0 +1,152 @@
+.editar-publicacion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.datos-editar, .archivos-editar{
+    display: flex;
+    flex-direction: column; /* Organiza los elementos en una columna */
+    width:50%; /* Ajusta el ancho de las columnas */
+}
+form >h2{
+    color: black;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+label{
+    font-weight: bold;
+}
+input{
+    margin-left:20px;
+    background-color: #f2f2f2; /* Cambia el color de fondo a gris */
+    border: 1px solid #ccc; /* Cambia el color del borde a gris claro */
+    transition: all 0.3s ease; /* Añade una transición suave cuando cambian las propiedades */
+}
+input:focus {
+    background-color: white; /* Cambia el color de fondo a blanco cuando el campo de entrada está enfocado */
+}
+input#textarea{
+    height: 100px;
+    width: 50%; /* Hace que el campo de texto ocupe todo el ancho disponible */
+}
+textarea{
+    margin-left:20px;
+    background-color: #f2f2f2; /* Cambia el color de fondo a gris */
+    border: 1px solid #ccc; /* Cambia el color del borde a gris claro */
+    transition: all 0.3s ease; /* Añade una transición suave cuando cambian las propiedades */
+    height: 100px;
+    width: 50%; /* Hace que el campo de texto ocupe todo el ancho disponible */
+}
+textarea:focus {
+    background-color: white; /* Cambia el color de fondo a blanco cuando el campo de entrada está enfocado */
+}
+
+#categoria{
+   margin-top: 10px;
+}
+#grado-master{
+    margin-top: 30px;
+}
+
+select{
+    text-align: center;
+    font-weight: bold;
+    border-radius: 10px;
+    border-color:  rgb(80, 88, 94);
+    border-width: 2px;
+    margin-left: 10px;
+}
+#boton-actualizar{
+   margin-top: auto;
+   margin-left: 100px;
+}
+div#cabecera-editar-publi{
+    display: flex; /* Organiza los elementos en una fila */
+    align-items: center; /* Centra los elementos verticalmente */
+    margin-top: 50px; /* Añade un margen en la parte superior */
+    margin-left: 20px;
+    margin-bottom: 30px;
+    background-color:  #548EA1; /* Fondo azul para la cabecera */
+    width: 90%; /* Los inputs no ocupan todo el ancho de la pantalla */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+h2#h2-editar-publicar{
+ margin-top: 10px; 
+ margin-bottom: 10px;
+    margin-left: 20px;
+    color: #f2f2f2;  
+}
+
+@media screen and (max-width: 800px) {
+  
+   
+    
+    .editar-publicacion {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .datos-editar, .archivos-editar {
+        display: flex;
+        flex-direction: column;
+        gap: 10px; /* Añadir un poco de espacio entre los elementos */
+    }
+    
+    form > h2 {
+        color: black;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    label {
+        font-weight: bold;
+    }
+    
+    input, select {
+        cursor: pointer;
+        margin-top: 5px;
+        padding: 10px;
+        background-color: #f2f2f2; /* Cambia el color de fondo a gris */
+        border: 1px solid #ccc; /* Cambia el color del borde a gris claro */
+        transition: all 0.3s ease; /* Añade una transición suave cuando cambian las propiedades */
+    }
+    input#titulo{
+        width: 100%;
+    }
+    
+    input:focus, select:focus {
+        background-color: white; /* Cambia el color de fondo a blanco cuando el campo de entrada está enfocado */
+    }
+    
+    textarea {
+        height: 100px;
+        width: 100%; /* Hace que el campo de texto ocupe todo el ancho disponible */
+    }
+    
+    select {
+        text-align: center;
+        font-weight: bold;
+        border-radius: 10px;
+        border-color: rgb(80, 88, 94);
+        border-width: 2px;
+    }
+    
+    #boton-actualizar {
+        margin-top: 20px;
+        text-align: center;
+    }
+    
+    #boton-actualizar button {
+        margin-left: 0;
+        width: 100%;
+    }
+    div#boton-actualizar{
+      
+        margin-left: 20px;
+    }
+}

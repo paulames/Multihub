@@ -1,0 +1,19 @@
+#footerPublicar{
+    margin-top: 4px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#boton-publicar{
+    margin-top: auto;
+    margin-right: 24.5em;
+}
+
+div#descripcion{
+    margin: 0px;
+}
+
+#descripcion{
+    display: flex;
+    flex-direction: column;
+}

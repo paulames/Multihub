@@ -1,0 +1,8 @@
+#likes{
+    display: flex;
+    align-content: center;
+}
+
+#likes>svg{
+    margin: 0 10px;
+}
